@@ -1,0 +1,133 @@
+{
+  "editor.rulers": [88],
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "files.autoSave": "afterDelay",
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // extensions
+  "tabnine.experimentalAutoImports": false,
+  // vim config
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.duration": 30,
+  // To improve performance"
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-w>": false
+  },
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Open/Close Sidebar
+    {
+      "before": ["<Leader>", "o"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    // Focus File Tree
+    {
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    // Open Folder
+    {
+      "before": ["<Leader>", "o", "f"],
+      "commands": ["workbench.action.files.openFolderViaWorkspace"]
+    },
+    // Find File
+    {
+      "before": ["<Leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    // Open Extensions
+    {
+      "before": ["<Leader>", "x"],
+      "commands": ["workbench.view.extensions"]
+    },
+    // Open Source Control
+    {
+      "before": ["<Leader>", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    // Format Code
+    {
+      "before": ["<Leader>", "f", "c"],
+      "commands": ["editor.action.formatDocument"],
+      "silent": true
+    },
+    // Clear Highlight
+    {
+      "before": ["escape"],
+      "commands": [":nohl"],
+      "silent": true
+    },
+    // System undo
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    // Scroll and Center
+    {
+      "before": ["ctrl+u"],
+      "after": ["ctrl+u", "z", "z"]
+    },
+    {
+      "before": ["ctrl+d"],
+      "after": ["ctrl+d", "z", "z"]
+    },
+    // Center on Search
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // paste without overriding the current register
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+  // Vim Statusbar Colors
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": "#000000",
+  "vim.statusBarColors.insert": "#5C5470",
+  "vim.statusBarColors.visual": "#352F44",
+  "vim.statusBarColors.visualline": "#352F44",
+  "vim.statusBarColors.visualblock": "#352F44",
+  "vim.statusBarColors.replace": "#B9B4C7",
+  "vim.statusBarColors.commandlineinprogress": "#597F6F",
+  "vim.statusBarColors.searchinprogressmode": "#183D3D",
+  "vim.statusBarColors.easymotionmode": "#1F6E8C",
+  "vim.statusBarColors.easymotioninputmode": "#1F6E8C",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBar.debuggingBackground": "#000000"
+  }
+}
