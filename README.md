@@ -40,11 +40,11 @@ VSCodeVim is a Vim emulator for Visual Studio Code
 | ------------- | ----------------------------- |
 | `<leader>` o  | Open/Close Sidebar            |
 | `<leader>` e  | Focus File Tree               |
-| `<leader>` of | Open Folder                   |
-| `<leader>` ff | Find File                     |
 | `<leader>` x  | Open Extensions               |
 | `<leader>` g  | Open Source Control           |
+| `<leader>` ff | Find File                     |
 | `<leader>` fc | Format Code                   |
+| `<leader>` fo | Open Folder                   |
 | `escape`      | Clear Highlight               |
 | `u`           | System undo                   |
 | `ctrl+u`      | Scroll Up and Center          |
@@ -71,7 +71,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code
     },
     // Open Folder
     {
-      "before": ["<Leader>", "o", "f"],
+      "before": ["<Leader>", "f", "o"],
       "commands": ["workbench.action.files.openFolderViaWorkspace"]
     },
     // Find File
@@ -167,7 +167,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code
 | `p`        | File Tree Focus: Paste         |
 | `y`        | File Tree Focus: Copy          |
 | `escape`   | Sidebar Focus: Go Back to File |
-| `space` of | Open Folder                    |
+| `space` fo | Open Folder                    |
 | `space` ff | Find File                      |
 | `space` x  | Open Extensions                |
 | `space` g  | Open Source Control            |
@@ -224,7 +224,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code
   },
   // Open Folder
   {
-    "key": "space o f",
+    "key": "space f o",
     "command": "workbench.action.files.openFolderViaWorkspace",
     "when": "!inputFocus"
   },
