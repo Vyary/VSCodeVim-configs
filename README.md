@@ -180,6 +180,12 @@ VSCodeVim is a Vim emulator for Visual Studio Code
  <summary>keybindings.json (click to expand)</summary>
   
 ```json
+  // MacOS Unbind Enter from Rename File in File Tree
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
   // Focus File Tree
   {
     "key": "space e",
