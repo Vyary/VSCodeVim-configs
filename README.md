@@ -24,12 +24,12 @@ VSCodeVim is a Vim emulator for Visual Studio Code
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.normal": "#000000",
   "vim.statusBarColors.insert": "#5C5470",
-  "vim.statusBarColors.visual": "#352F44",
-  "vim.statusBarColors.visualline": "#352F44",
-  "vim.statusBarColors.visualblock": "#352F44",
+  "vim.statusBarColors.visual": "#183D3D",
+  "vim.statusBarColors.visualline": "#183D3D",
+  "vim.statusBarColors.visualblock": "#183D3D",
   "vim.statusBarColors.replace": "#B9B4C7",
   "vim.statusBarColors.commandlineinprogress": "#597F6F",
-  "vim.statusBarColors.searchinprogressmode": "#183D3D",
+  "vim.statusBarColors.searchinprogressmode": "#3D5F6A",
   "vim.statusBarColors.easymotionmode": "#1F6E8C",
   "vim.statusBarColors.easymotioninputmode": "#1F6E8C",
 ```
@@ -51,6 +51,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code
 | `ctrl+d`      | Scroll Down and Center        |
 | `n`           | Center Next Search Result     |
 | `N`           | Center Previous Search Result |
+| `:`           | Open Command Palette          |
 
 <br>
 <details>
